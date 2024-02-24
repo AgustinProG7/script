@@ -30,7 +30,7 @@ Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
 Main.BorderSizePixel = 0
 Main.Position = UDim2.new(0.137532547, 0, 0.214979202, 0)
 Main.Size = UDim2.new(0, 135, 0, 303)
-Main.Dragabble = true
+Main.Draggabble = true
 
 Frame.Parent = Main
 Frame.Active = true
