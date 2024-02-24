@@ -1,0 +1,273 @@
+-- gui by Agustin
+-- dont steal my gui please
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local BlueTop = Instance.new("TextButton")
+local BlueBottom = Instance.new("TextButton")
+local RedTop = Instance.new("TextButton")
+local RedBottom = Instance.new("TextButton")
+local YellowTop = Instance.new("TextButton")
+local YellowBottom = Instance.new("TextButton")
+local GreenTop = Instance.new("TextButton")
+local GreenBottom = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Main.BorderSizePixel = 0
+Main.Position = UDim2.new(0.137532547, 0, 0.214979202, 0)
+Main.Size = UDim2.new(0, 135, 0, 303)
+Main.Dragabble = true
+
+Frame.Parent = Main
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(0, 255, 60)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Size = UDim2.new(0, 135, 0, 6)
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, -4.5, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 27)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Teleports"
+TextLabel.TextColor3 = Color3.fromRGB(193, 255, 193)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+BlueTop.Name = "BlueTop"
+BlueTop.Parent = Main
+BlueTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BlueTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BlueTop.BorderSizePixel = 0
+BlueTop.Position = UDim2.new(0.05185185, 0, 0.050193049, 0)
+BlueTop.Size = UDim2.new(0, 120, 0, 20)
+BlueTop.Font = Enum.Font.SourceSansBold
+BlueTop.Text = "TP Blue Top"
+BlueTop.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlueTop.TextScaled = true
+BlueTop.TextSize = 14.000
+BlueTop.TextWrapped = true
+
+BlueBottom.Name = "BlueBottom"
+BlueBottom.Parent = Main
+BlueBottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BlueBottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+BlueBottom.BorderSizePixel = 0
+BlueBottom.Position = UDim2.new(0.0592592582, 0, 0.15830116, 0)
+BlueBottom.Size = UDim2.new(0, 120, 0, 18)
+BlueBottom.Font = Enum.Font.SourceSansBold
+BlueBottom.Text = "TP Blue Bottom"
+BlueBottom.TextColor3 = Color3.fromRGB(0, 0, 0)
+BlueBottom.TextScaled = true
+BlueBottom.TextSize = 14.000
+BlueBottom.TextWrapped = true
+
+RedTop.Name = "RedTop"
+RedTop.Parent = Main
+RedTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedTop.BorderSizePixel = 0
+RedTop.Position = UDim2.new(0.0592592582, 0, 0.266409278, 0)
+RedTop.Size = UDim2.new(0, 120, 0, 19)
+RedTop.Font = Enum.Font.SourceSansBold
+RedTop.Text = "TP Red Top"
+RedTop.TextColor3 = Color3.fromRGB(0, 0, 0)
+RedTop.TextScaled = true
+RedTop.TextSize = 14.000
+RedTop.TextWrapped = true
+
+RedBottom.Name = "RedBottom"
+RedBottom.Parent = Main
+RedBottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RedBottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+RedBottom.BorderSizePixel = 0
+RedBottom.Position = UDim2.new(0.0592592582, 0, 0.378378391, 0)
+RedBottom.Size = UDim2.new(0, 120, 0, 21)
+RedBottom.Font = Enum.Font.SourceSansBold
+RedBottom.Text = "TP Red Bottom"
+RedBottom.TextColor3 = Color3.fromRGB(0, 0, 0)
+RedBottom.TextScaled = true
+RedBottom.TextSize = 14.000
+RedBottom.TextWrapped = true
+
+YellowTop.Name = "YellowTop"
+YellowTop.Parent = Main
+YellowTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+YellowTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+YellowTop.BorderSizePixel = 0
+YellowTop.Position = UDim2.new(0.0592592582, 0, 0.498069495, 0)
+YellowTop.Size = UDim2.new(0, 120, 0, 17)
+YellowTop.Font = Enum.Font.SourceSansBold
+YellowTop.Text = "TP Yellow Top"
+YellowTop.TextColor3 = Color3.fromRGB(0, 0, 0)
+YellowTop.TextScaled = true
+YellowTop.TextSize = 14.000
+YellowTop.TextWrapped = true
+
+YellowBottom.Name = "YellowBottom"
+YellowBottom.Parent = Main
+YellowBottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+YellowBottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+YellowBottom.BorderSizePixel = 0
+YellowBottom.Position = UDim2.new(0.0592592582, 0, 0.598455608, 0)
+YellowBottom.Size = UDim2.new(0, 120, 0, 17)
+YellowBottom.Font = Enum.Font.SourceSansBold
+YellowBottom.Text = "TP Yellow Bottom"
+YellowBottom.TextColor3 = Color3.fromRGB(0, 0, 0)
+YellowBottom.TextScaled = true
+YellowBottom.TextSize = 14.000
+YellowBottom.TextWrapped = true
+
+GreenTop.Name = "GreenTop"
+GreenTop.Parent = Main
+GreenTop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GreenTop.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GreenTop.BorderSizePixel = 0
+GreenTop.Position = UDim2.new(0.0592592582, 0, 0.706563711, 0)
+GreenTop.Size = UDim2.new(0, 119, 0, 22)
+GreenTop.Font = Enum.Font.SourceSansBold
+GreenTop.Text = "TP Green Top"
+GreenTop.TextColor3 = Color3.fromRGB(0, 0, 0)
+GreenTop.TextScaled = true
+GreenTop.TextSize = 14.000
+GreenTop.TextWrapped = true
+
+GreenBottom.Name = "GreenBottom"
+GreenBottom.Parent = Main
+GreenBottom.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GreenBottom.BorderColor3 = Color3.fromRGB(0, 0, 0)
+GreenBottom.BorderSizePixel = 0
+GreenBottom.Position = UDim2.new(0.0592592582, 0, 0.833976805, 0)
+GreenBottom.Size = UDim2.new(0, 119, 0, 21)
+GreenBottom.Font = Enum.Font.SourceSansBold
+GreenBottom.Text = "TP Green Bottom"
+GreenBottom.TextColor3 = Color3.fromRGB(0, 0, 0)
+GreenBottom.TextScaled = true
+GreenBottom.TextSize = 14.000
+GreenBottom.TextWrapped = true
+
+-- Scripts:
+
+local function ZAEAGPC_fake_script() -- BlueTop.LocalScript 
+	local script = Instance.new('LocalScript', BlueTop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(2.103303909301758, 134.5436248779297, 94.24823760986328))
+	
+	
+	end)
+	
+end
+coroutine.wrap(ZAEAGPC_fake_script)()
+local function ASWPDLT_fake_script() -- BlueBottom.LocalScript 
+	local script = Instance.new('LocalScript', BlueBottom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-0.150992751121521, 24.798070907592773, 131.0256805419922))
+	
+	
+	end)
+	
+end
+coroutine.wrap(ASWPDLT_fake_script)()
+local function UHXCT_fake_script() -- RedTop.LocalScript 
+	local script = Instance.new('LocalScript', RedTop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-91.78800964355469, 131.39805603027344, 0.3303385078907013))
+	
+	
+	end)
+	
+end
+coroutine.wrap(UHXCT_fake_script)()
+local function ANSTEGO_fake_script() -- RedBottom.LocalScript 
+	local script = Instance.new('LocalScript', RedBottom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(-135.0976104736328, 26.835969924926758, -2.679689645767212))
+	
+	
+	end)
+	
+end
+coroutine.wrap(ANSTEGO_fake_script)()
+local function QYNYQ_fake_script() -- YellowTop.LocalScript 
+	local script = Instance.new('LocalScript', YellowTop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(89.84793090820312, 132.62118530273438, -1.3691047430038452))
+	
+	
+	end)
+	
+end
+coroutine.wrap(QYNYQ_fake_script)()
+local function EXFUY_fake_script() -- YellowBottom.LocalScript 
+	local script = Instance.new('LocalScript', YellowBottom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(131.1280975341797, 24.258901596069336, -2.7818992137908936))
+	
+	
+	end)
+	
+end
+coroutine.wrap(EXFUY_fake_script)()
+local function BVGJE_fake_script() -- GreenTop.LocalScript 
+	local script = Instance.new('LocalScript', GreenTop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(0.33590200543403625, 131.39805603027344, -92.11357879638672))
+	
+	
+	end)
+	
+end
+coroutine.wrap(BVGJE_fake_script)()
+local function ECCVEQ_fake_script() -- GreenBottom.LocalScript 
+	local script = Instance.new('LocalScript', GreenBottom)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local player = game.Players.LocalPlayer
+		local humanoid = player.Character
+		humanoid:MoveTo(Vector3.new(0.1980072259902954, 24.79806900024414, -131.39862060546875))
+	
+	
+	end)
+	
+end
+coroutine.wrap(ECCVEQ_fake_script)()
